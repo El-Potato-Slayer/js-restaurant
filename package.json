@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/El-Potato-Slayer/js-restaurant#readme",
   "devDependencies": {
+    "babel-eslint": "10.1.x",
+    "eslint": "6.8.x",
+    "eslint-config-airbnb-base": "14.1.x",
+    "eslint-plugin-import": "2.20.x",
     "webpack": "^5.26.3",
     "webpack-cli": "^4.5.0"
   }
