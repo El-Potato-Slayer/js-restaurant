@@ -1,0 +1,23 @@
+{
+  "name": "js-restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/El-Potato-Slayer/js-restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/El-Potato-Slayer/js-restaurant/issues"
+  },
+  "homepage": "https://github.com/El-Potato-Slayer/js-restaurant#readme",
+  "devDependencies": {
+    "webpack": "^5.26.3",
+    "webpack-cli": "^4.5.0"
+  }
+}
