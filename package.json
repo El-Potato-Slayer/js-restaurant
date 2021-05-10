@@ -1,0 +1,28 @@
+{
+  "name": "js-restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/El-Potato-Slayer/js-restaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/El-Potato-Slayer/js-restaurant/issues"
+  },
+  "homepage": "https://github.com/El-Potato-Slayer/js-restaurant#readme",
+  "devDependencies": {
+    "babel-eslint": "10.1.x",
+    "eslint": "6.8.x",
+    "eslint-config-airbnb-base": "14.1.x",
+    "eslint-plugin-import": "2.20.x",
+    "webpack": "^5.26.3",
+    "webpack-cli": "^4.5.0"
+  }
+}
