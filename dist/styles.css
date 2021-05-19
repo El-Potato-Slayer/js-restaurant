@@ -1,0 +1,318 @@
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+/* General */
+
+.xy-center{
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-dark{
+  background: #0f0f0f;
+}
+
+.object-cover{
+  object-fit: cover;
+}
+
+.bg-semi-dark {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Layout */
+
+.nav-links{
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  background: #0f0f0f;
+  transition: top 0.3s ease-in-out;
+  top: -6.5rem;
+  z-index: 1;
+}
+
+.nav-links p {
+  z-index: 2;
+}
+
+#hamburger-wrapper {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+#hamburger,
+#hamburger::before,
+#hamburger::after{
+  width: 1.75rem;
+  height: 0.125rem;
+  background: white;
+  content: "";
+  transition: all 0.3s ease-in-out;
+  margin: 0 auto;
+}
+
+#hamburger{
+  transform: translateY(-50%);
+}
+
+#hamburger::before{
+  position: absolute;
+  left: 0;
+  top: -0.625rem;
+  transform: translateY(50%);
+}
+
+#hamburger::after{
+  position: absolute;
+  left: 0;
+  top: 0.625rem;
+  transform: translateY(-50%);
+}
+
+#content {
+  overflow: hidden;
+}
+
+.intro {
+  background: url(./assets/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow-y: auto;
+}
+
+.intro h1{
+  font-size: 5rem;
+}
+
+.intro h2{
+  font-size: 1.5rem;
+}
+
+.reduced-screen-height{
+  height: calc(100vh - 4.5rem);
+}
+
+.menu {
+  background: url(./assets/images/bg-menu.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 4.5rem);
+  position: fixed;
+  overflow-y: auto;
+}
+
+.contact {
+  background: url(./assets/images/bg-contact.jpg);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 4.5rem);
+  overflow-y: auto;
+}
+
+#logo,
+.intro h1{
+  font-family: 'Great Vibes', sans-serif;
+}
+
+.menu-text h4,
+.intro h2{
+  font-family: 'Petit Formal Script', sans-serif;
+}
+
+#logo {
+  color: #b8860b;
+  z-index: 2;
+}
+
+.active-link{
+  color: white;
+}
+
+.active-page{
+  display: block;
+}
+
+.card-text{
+  min-height: calc(100vh - 4.5rem);
+
+}
+
+/* Animations */
+
+#hamburger.open{
+  left: -50%;
+  background: transparent;
+}
+
+#hamburger.open::before{
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: rotate(45deg);
+}
+
+#hamburger.open::after{
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: rotate(-45deg);
+}
+
+@media only screen and (min-width: 640px) {
+  .intro h1{
+    font-size: 6rem;
+  }
+
+  .intro h2{
+    font-size: 1.8rem;
+  }
+
+  .card{
+    display: grid;
+  }
+  
+  #thyme{
+    right: 13%;
+    bottom: -25%;
+    scale: 1.2;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .nav-links{
+    position: static;
+    width: auto;
+    background: inherit;
+  }
+  
+  .intro h1{
+    font-size: 7rem;
+  }
+
+  .intro h2{
+    font-size: 2rem;
+  }
+
+  #thyme{
+    right: 10%;
+    bottom: -20%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .intro h1{
+    font-size: 9rem;
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    transform: translate(-12%, -40%);
+  }
+
+  .intro h2{
+    font-size: 2.5rem;
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    transform: translate(-12%, -60%);
+  }
+
+  #dish {
+    position: absolute;
+    top: 12%;
+    right: 12%;
+    height: auto;
+    width: auto;
+    max-width: 25rem;
+  }
+
+  #rosemary1{
+    position: absolute;
+    bottom: 7%;
+    right: 37%;
+    height: auto;
+    width: auto;
+  }
+
+  #tomatoes{
+    position: absolute;
+    bottom: 12%;
+    right: 35%;
+    height: auto;
+    width: auto;
+  }
+
+  #onions{
+    position: absolute;
+    top: 5%;
+    right: 35%;
+    height: auto;
+    width: auto;
+  }
+
+  #garlic{
+    position: absolute;
+    top: 40%;
+    right: 8%;
+    height: auto;
+    width: auto;
+  }
+
+  .card{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .menu-item:nth-of-type(2n) {
+    direction: rtl;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  #dish {
+    top: 12%;
+    right: 12%;
+    max-width: 100%;
+  }
+
+  #rosemary1{
+    position: absolute;
+    bottom: 7%;
+    right: 45%;
+    height: auto;
+    width: auto;
+  }
+
+  #tomatoes{
+    position: absolute;
+    bottom: 12%;
+    right: 43%;
+    height: auto;
+    width: auto;
+  }
+
+  #onions{
+    position: absolute;
+    top: 28%;
+    right: 44%;
+    height: auto;
+    width: auto;
+  }
+
+  #garlic{
+    position: absolute;
+    top: 40%;
+    right: 9%;
+    height: auto;
+    width: auto;
+  }
+
+  .card{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+}
